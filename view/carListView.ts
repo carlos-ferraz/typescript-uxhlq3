@@ -1,5 +1,5 @@
 import { controller } from '../controller/controller';
-import { carView } from '../view/carView';
+import { carView, Car } from '../view/carView';
 
 export const carListView = {
   init() {
@@ -11,8 +11,8 @@ export const carListView = {
   },
 
   render() {
-    let car;
-    let elem;
+    let car: Car;
+    let elem : HTMLElement;
     let i;
     // get the cars to be render from the controller
     const cars = controller.getCars();
